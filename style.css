@@ -1,0 +1,604 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+
+}
+
+body {
+    background-color: #80808029;
+
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.topo {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 24px;
+    color: #5d15d1;
+
+    padding: 0;
+    margin: 0 0 0 10px;
+
+}
+
+.topo img {
+    height: 32px;
+    width: 32px;
+}
+
+.banner {
+    background-image: url("./images/bahia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+.container-banner {
+
+    margin: 0;
+    padding: 50px 50px;
+    width: 100%;
+    height: auto;
+}
+
+.header-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    background-color: #5d15d1;
+}
+
+.header-form img {
+    height: 20px;
+    width: 20px;
+    transform: rotate(-45deg);
+}
+
+.header-form h3 {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+
+}
+
+.container-form {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 25px 20px 25px;
+}
+
+.container-form h3 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ident {
+    font-size: 16px;
+
+
+}
+
+
+.container-form input {
+
+    width: 100%;
+    line-height: 32px;
+    margin: 10px 0;
+    padding: 0 5px;
+
+}
+
+.container-origin select {
+    height: 32px;
+    padding: 0 3px;
+    margin: 10px 0px;
+
+}
+
+.container-destin select {
+    height: 32px;
+    padding: 0 3px;
+    margin: 10px 0;
+
+}
+
+.container-date {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.container-go,
+.container-back {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/2 - 10px);
+    padding: 0 5px;
+}
+
+.container-way {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.container-destin,
+.container-origin {
+    width: calc(100%/2 - 10px);
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.choose {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+
+}
+
+.choose-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 10px;
+
+}
+
+.choose-container label {
+
+    margin-left: 8px;
+}
+
+.container-mark {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.mark {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    margin: 10px 15px;
+    width: 120px;
+
+}
+
+.mark input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+}
+
+.mark label {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: 8px;
+    padding: 0;
+    align-items: center;
+
+}
+
+button {
+    background-color: #5d15d1;
+    color: #fff;
+    font-size: 16px;
+    width: 160px;
+    height: 32px;
+    border: none;
+
+    margin-top: 12px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.ofertas {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+
+
+    margin-bottom: 0px;
+    margin-top: 32px;
+
+}
+
+.ofertas-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.ofertas-text p {
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.ofertas-text span {
+    font-weight: bold;
+}
+
+.cities p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    background: rgb(0 0 0 / 50%);
+    font-size: 17px;
+    color: #fff;
+
+    padding: 5px 10px;
+    box-sizing: border-box;
+
+}
+
+.cities {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+
+}
+
+.city-image-cristo {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.more-cities {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.city-image {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.city-image-cristo img,
+.city-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.ad {
+    margin: 0 0 0 15px;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.ad h3 {
+    margin: 0 15px;
+}
+
+.ad p {
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.img-ads {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.waterfall,
+.groundwater {
+    display: flex;
+    width: calc(100%/2 - 20px);
+    height: 100%;
+    flex-direction: column;
+
+
+    margin: 5px;
+    padding: 0;
+}
+
+.text-ad {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+
+}
+
+.text-ad h3 {
+    font-size: 16px;
+    margin: 15px 0 0 0;
+
+}
+
+.text-ad p {
+    margin: 15px 0 0 0;
+    color: gray;
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #5d15d1;
+    margin-top: 32px;
+    width: 100%;
+    height: auto;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    margin: 0 50px;
+    padding: 0;
+
+    width: 1024px;
+    height: auto;
+
+    color: #fff;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+
+
+    margin: 0;
+    padding: 15px 0;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+
+
+
+    margin: 0;
+    padding: 15px 0;
+}
+
+.social h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+
+.contact h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+
+.end img {
+    width: 18px;
+}
+
+.end span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.container-end {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0;
+    margin: 5px 0;
+}
+
+.container-end span {
+    width: 100%;
+}
+
+/*responsividade do site*/
+
+
+@media(max-width:540px) {
+
+    .topo,
+    .banner,
+    .ofertas,
+    .cities,
+    .end {
+        width: 90%;
+    }
+
+    .choose,
+    .container-mark,
+    .container-way,
+    .container-date {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .choose-container,
+    .container-destin,
+    .container-origin,
+    .container-back,
+    .container-go {
+        width: 100%;
+    }
+
+
+    .container-date input {
+        width: 100%;
+    }
+    .choose-container{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .choose-container input {
+        width: auto;
+    }
+
+    input {
+        width: 100%;
+       
+    }
+    .city-image{
+        width: 100%;
+        margin-bottom:2px ;
+    }
+    .city-image-cristo{
+        width: 100%;
+        margin-bottom:2px;
+        margin-left: 5px;
+    }
+ 
+}
+
+@media(max-width:768px) {
+
+    .topo,
+    .banner,
+    .ofertas,
+    .cities,
+    .end {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .cities {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+
+
+    }
+
+    .city-image-cristo {
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .more-cities {
+        width: 100%;
+
+    }
+
+    .city-image{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+
+    }
+
+    .img-ads {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .groundwater {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .waterfall {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .end {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .contact {
+        width: 250px;
+    }
+
+    .social {
+
+        width: 250px;
+    }
+
+
+
+}
+
+@media(max-width:1100px) {
+
+    .topo,
+    .banner,
+    .ofertas,
+    .cities,
+    .end {
+        width: 90%;
+    }
+
+
+
+
+}
+
+@media (min-width:1101px) {}
